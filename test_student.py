@@ -11,9 +11,11 @@ class TestStudent(unittest.TestCase):
     def tearDown(self):
         print('tearDown')
 
+
     def test_full_name(self):
         print('test_full_name')
         self.assertEqual(self.student.full_name, 'John Doe')
+
 
     def test_alert_santa(self):
         print('test_alert_santa')
@@ -21,10 +23,12 @@ class TestStudent(unittest.TestCase):
 
         self.assertTrue(self.student.naughty_list)
 
+
     def test_email(self):
         print('test_email')
 
         self.assertEqual(self.student.email, 'john.doe@email.com')
+        
 
 if __name__ == '__main__':
     unittest.main()
